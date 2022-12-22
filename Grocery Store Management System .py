@@ -1,3 +1,6 @@
+#GROCERY STORE MANAGEMENT SYSTEM
+#PROGRAM BY LAKSHYA (GRADE 12, MOUNT ST.MARY'S SCHOOL)
+
 import mysql.connector
 from tabulate import tabulate
 from datetime import date
