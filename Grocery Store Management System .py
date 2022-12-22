@@ -5,7 +5,7 @@ from datetime import date
 #Get the current date
 current_date = date.today()
 
-db = mysql.connector.connect(host="localhost", user="root", password="mysql2022")
+db = mysql.connector.connect(host="localhost", user="root", password="")
 cursor = db.cursor()
 
 #Create Database 'Grocery_Store'
