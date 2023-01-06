@@ -177,11 +177,13 @@ def delete_history():
     print (" ")
     proceed = input("Do you want to proceed? (y/n):")
     print (" ")
-    
-    cursor.execute("DELETE FROM CUSTOMER;")
-    cursor.execute("DELETE FROM SALES;")
-    db.commit()
-    print("*HISTORY DELETED*")
+    if proceed == "y":
+        cursor.execute("DELETE FROM CUSTOMER;")
+        cursor.execute("DELETE FROM SALES;")
+        db.commit()
+        print("*HISTORY DELETED*")
+    else:
+        print(" ")
     
 #Delete a specific record
 def delete_record():
